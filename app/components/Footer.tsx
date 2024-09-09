@@ -1,6 +1,3 @@
-import Link from "next/link";
-import { FaGithub, FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
-
 interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = () => {
