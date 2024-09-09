@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Button } from "./components/Button";
 import Subtitle from "./components/Subtitle";
 import Title from "./components/Title";
-import { FiArrowRight } from "react-icons/fi";
+import { FiArrowRight, FiArrowUpRight } from "react-icons/fi";
 import Footer from "./components/Footer";
 import { Badge } from "./components/Badge";
 import PulseDot from "./components/PulseDot";
@@ -109,11 +109,24 @@ export default function Home() {
             <PulseDot /> Available
           </Badge>
           <Subtitle text="Ciao! I’m a NYC-based full-stack engineer with Italian roots. Blending creativity and code to build the future." />
-          <Button asChild variant="outline" className="text-xl">
-            <Link href="mailto:francesco@coacci.it">
-              Let&apos;s Talk <FiArrowRight className="ml-2" />
-            </Link>
-          </Button>
+
+          <div className="flex flex-row items-center justify-center gap-2">
+            <Button
+              asChild
+              variant="default"
+              className="bg-accent rounded-full text-background text-xl hover:bg-accent/80"
+            >
+              <Link target="_blank" href="/resume.pdf">
+                Resume <FiArrowUpRight className="ml-2" />
+              </Link>
+            </Button>
+            <Button asChild variant="outline" className="text-xl">
+              <Link href="mailto:francesco@coacci.it">
+                Let&apos;s Talk <FiArrowRight className="ml-2" />
+              </Link>
+            </Button>
+          </div>
+
           <div className="flex flex-row items-center justify-center gap-4">
             <Link
               target="_blank"
