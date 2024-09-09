@@ -40,8 +40,8 @@ const AccordionProject: React.FC<AccordionProjectProps> = ({
           </div>
         </div>
       </AccordionTrigger>
-      <AccordionContent className="px-5">
-        <div className="px-5 text-foreground flex flex-col gap-5">
+      <AccordionContent className="md:px-5">
+        <div className="md:px-5 text-foreground flex flex-col gap-5">
           <div className="flex flex-col gap-2">
             <h3 className="text-2xl font-medium">Description</h3>
             <p className="text-base font-medium">{description}</p>

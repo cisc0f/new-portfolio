@@ -101,7 +101,7 @@ export default function Home() {
   return (
     <div>
       <div className="h-section relative flex items-center justify-center">
-        <div className="absolute top-0 left-0 text-accent p-10">
+        <div className="absolute top-0 left-0 text-accent p-5 md:p-10">
           <Title text="FRANCESCO COACCI" />
         </div>
         <div className="px-5 md:w-1/2 h-full text-center flex flex-col gap-5 justify-center items-center">
@@ -152,12 +152,12 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="text-end text-accent absolute bottom-0 right-0 p-10 hover-underline">
+        <div className="text-end text-accent absolute bottom-0 right-0 p-5 md:p-10 hover-underline">
           <Title text="FULL-STACK ENGINEER" />
         </div>
       </div>
 
-      <div className="min-h-section bg-foreground p-10 flex flex-col gap-10">
+      <div className="min-h-section bg-foreground p-5 md:p-10 flex flex-col gap-10">
         <SectionTitle text="Selected Work" />
         <Accordion
           type="single"
