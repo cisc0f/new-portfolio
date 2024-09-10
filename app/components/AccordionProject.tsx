@@ -34,7 +34,7 @@ const AccordionProject: React.FC<AccordionProjectProps> = ({
           ></div>
           <div className="flex flex-col items-start justify-center">
             <h2 className="text-start">{title}</h2>
-            <p className="text-start text-base md:text-xl text-foreground/50">
+            <p className="text-start text-sm md:text-xl text-foreground/50">
               {subtitle}
             </p>
           </div>

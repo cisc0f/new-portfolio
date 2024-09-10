@@ -1,5 +1,7 @@
+import React from "react";
+
 interface SubtitleProps {
-  text: string;
+  text: React.ReactNode;
 }
 
 const Subtitle: React.FC<SubtitleProps> = ({ text }) => {

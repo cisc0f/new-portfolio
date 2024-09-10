@@ -108,7 +108,15 @@ export default function Home() {
           <Badge variant="outline" className="text-md flex flex-row gap-2">
             <PulseDot /> Available
           </Badge>
-          <Subtitle text="Ciao! I’m a NYC-based full-stack engineer with Italian roots. Blending creativity and code to build the future." />
+          <Subtitle
+            text={
+              <>
+                <span className="text-[#00b530]">Ciao!</span> I’m a NYC-based
+                full-stack engineer with Italian roots. Blending creativity and
+                code to build the future.
+              </>
+            }
+          />
 
           <div className="flex flex-row items-center justify-center gap-2">
             <Button
@@ -190,6 +198,20 @@ export default function Home() {
             />
           ))}
         </Accordion>
+      </div>
+
+      <div className="h-section text-center bg-background p-5 md:p-10 flex flex-col items-center justify-center gap-5">
+        <Subtitle text="Are you curious about what drives me?" />
+        <Button
+          variant="default"
+          className="bg-accent rounded-full text-background text-xl hover:bg-accent/80"
+          asChild
+        >
+          <Link target="_blank" href="https://www.dimensional.me/francesco">
+            Checkout my personality
+            <FiArrowUpRight className="ml-2" />
+          </Link>
+        </Button>
       </div>
 
       <Footer />
