@@ -64,6 +64,19 @@ const projects = [
     links: ["https://github.com/cisc0f/coal"],
   },
   {
+    color: "#1b5cdd",
+    title: "Forma",
+    subtitle: "NYU Project",
+    description: `Forma is a revolutionary wearable device and app that provides 
+    real-time feedback to prevent injuries while running. The device features a 
+    sensor that is placed in the lower back, which monitors the user's posture and movement.
+    The accompanying app delivers instant feedback through headphones, helping runners adjust their 
+    form and avoid potential injuries. This innovative solution aims to enhance the running 
+    experience by promoting safer practices and improving overall performance.`,
+    techs: ["Python", "Flutter", "TypeScript", "AWS", "LLM"],
+    links: ["https://github.com/getforma"],
+  },
+  {
     title: "Hashgraph",
     subtitle: "Developer Relations Engineer",
     description: `At Hashgraph, I focused on spreading
